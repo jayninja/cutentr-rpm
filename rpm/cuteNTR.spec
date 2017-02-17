@@ -28,7 +28,7 @@ cd src && make
 
 %install
 cd src && make install INSTALL_ROOT=%{buildroot}
-pwd;ls -l
+
 mkdir -p $RPM_BUILD_ROOT/usr/local/share/applications/
 mkdir -p $RPM_BUILD_ROOT/usr/local/share/icons/
 mkdir -p $RPM_BUILD_ROOT/usr/local/share/pixmaps/
@@ -37,15 +37,10 @@ install -m 644 ../setup/gui/cutentr.desktop $RPM_BUILD_ROOT/usr/local/share/appl
 install -m 644 ../setup/gui/cutentr.svg $RPM_BUILD_ROOT/usr/local/share/icons/cutentr.svg
 install -m 644 ../resources/linux/icon/cutentr.xpm $RPM_BUILD_ROOT/usr/local/share/pixmaps/cutentr.xpm
 
-
 %files
 /usr/local/bin/cutentr
 /usr/local/share/applications/cutentr.desktop
 /usr/local/share/icons/cutentr.svg
 /usr/local/share/pixmaps/cutentr.xpm
-
-
-
-
 
 %changelog
