@@ -5,6 +5,7 @@ cp $1.tar.gz ~/rpmbuild/SOURCES
 rpmbuild -bb $1/rpm/$1.spec
 }
 
+mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS} &> /dev/null
 
 echo "Clearing old cuteNTR dir"
 rm -rf cuteNTR cuteNTR.tar.gz
