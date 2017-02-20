@@ -1,7 +1,7 @@
-# cutentr-rpm
-Attempting to get cuteNTR built on CentOS7
-
-Paul mentioned the community needed this in RPM. I happen to be an RPM badass. So I went ahead and made it for you guys. Happy hacking.
+# cuteNTR-rpm
+cuteNTR built/packaged on CentOS7.  
+  
+A friend mentioned the community needs this packaged up in an RPM, and compiled for CentOS. Converting with alien or fpm is lame. So I went ahead and did it. 
 
 Instructions:
 You have two options. 
@@ -10,7 +10,9 @@ You have two options.
 2. Build your own:
    * git clone this repo  
    * ensure you have the pre-requisites installed (listed in the RPM SPEC as BuildRequires)
-   * run build-rpm.sh.
-    (notes: I made some assumptions. I assume you follow the standard rpm directory structure. ~/rpmbuild/{SOURCES,RPMS,BUILD,etc}
-    
+   * run build-rpm.sh
+
+notes: I made some assumptions:  
+* I assume you follow the standard rpm directory structure. ~/rpmbuild/{SOURCES,RPMS,BUILD,etc}
+* I assume you realize this is only going to work on CentOS7. Because the version of GLIBC in CentOS 6 is too old. It isnt worth installing side by side just to get it installed. Then you have to maintain rpms for an alternate location build for glibc to not jack up your OS.    
    
