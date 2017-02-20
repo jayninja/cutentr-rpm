@@ -7,6 +7,9 @@ Instructions:
 You have two options. 
 
 1. Use the one I built: I've provided the CentOS7 rpm in ./precompiled/.    
+  * wget https://github.com/jayninja/cutentr-rpm/raw/master/precompiled/cuteNTR-3.9.8-1.el7.centos.x86_64.rpm
+  * yum -y install cuteNTR-3.9.8-1.el7.centos.x86_64.rpm
+  
 2. Build your own:
    * git clone this repo  
    * ensure you have the pre-requisites installed (listed in the RPM SPEC as BuildRequires)
