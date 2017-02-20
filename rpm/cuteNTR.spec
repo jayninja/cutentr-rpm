@@ -9,7 +9,7 @@ URL: https://gitlab.com/BoltsJ/cuteNTR
 Source0: cuteNTR.tar.gz
 
 BuildRequires: git, gcc-c++, qt5-qtbase, qt5-qtbase-gui, qt5-qtbase-devel, rpm-build
-Requires: qt5-qtbase 
+Requires: qt5-qtbase, qt5-qtbase-common, qt5-qtbase-gui 
 
 %description
 N3DS streaming client
